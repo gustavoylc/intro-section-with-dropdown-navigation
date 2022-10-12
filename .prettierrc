@@ -1,1 +1,15 @@
-{ "useTabs": true, "singleAttributePerLine": true }
+{
+	"useTabs": true,
+	"singleAttributePerLine": true,
+	"importOrder": [
+		"^@core/(.*)$",
+		"<THIRD_PARTY_MODULES>",
+		"^@server/(.*)$",
+		"^@ui/(.*)$",
+    "^@/components/(.*)$",
+    "^@images/(.*)$",
+		"^[./]"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}
