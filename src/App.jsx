@@ -1,5 +1,11 @@
 import { Home } from "@/pages/Home";
 
+import { HeaderProvider } from "@/components/Header/HeaderContext";
+
 export function App() {
-	return <Home />;
+	return (
+		<HeaderProvider>
+			<Home />
+		</HeaderProvider>
+	);
 }
