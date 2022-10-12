@@ -1,28 +1,13 @@
-import { Fragment } from "react";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Main } from "@/components/Main";
 
 export const Home = () => {
 	return (
-		<Fragment>
-			<footer>
-				<div className="text-center text-xs">
-					Challenge by{" "}
-					<a
-						className="text-footer-primary"
-						href="https://www.frontendmentor.io?ref=challenge"
-						target="_blank"
-					>
-						Frontend Mentor
-					</a>
-					. Coded by{" "}
-					<a
-						className="text-footer-primary"
-						href="https://www.frontendmentor.io/profile/gustavoylc"
-					>
-						Gustavo Leyte-Vidal
-					</a>
-					.
-				</div>
-			</footer>
-		</Fragment>
+		<main className="min-w-375 text-base font-medium text-medium-gray">
+			<Header />
+			<Main />
+			<Footer />
+		</main>
 	);
 };
